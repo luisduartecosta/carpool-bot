@@ -120,7 +120,7 @@
 						
 					case 'teste':
 						error_log("teste");
-						$texto = "Versão BETA 1.3 - ChatId: $chat_id";
+						$texto = "Versão BETA 1.4 - ChatId: $chat_id";
 
 						TelegramConnect::sendMessage($chat_id, $texto);
 						break;
@@ -133,6 +133,12 @@
 
 					case 'luiza':
 						$texto = "Luiiiis, me espera! Só vou atrasar uns minutinhos!";
+
+						TelegramConnect::sendMessage($chat_id, $texto);
+						break;
+
+					case 'janoti':
+						$texto = "@Janoti oferece carona entre 08:00 e 12:00 com 6 vagas saindo de Ilha Toda";
 
 						TelegramConnect::sendMessage($chat_id, $texto);
 						break;

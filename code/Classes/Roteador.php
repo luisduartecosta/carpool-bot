@@ -143,10 +143,11 @@
 							$resultado = $dao->getListaIda($chat_id);
 
 							$source = Config::getBotConfig("source");
-							$texto = "<b>Ida para " . $source . "</b>\n(Combinar as caronas no privado)";
+							$texto = "<b>Ida para " . $source . "</b>\n";
 							foreach ($resultado as $carona){
-								$texto .= (string)$carona;
+								$texto .= (string)$carona . "\n";
 							}
+							$texto .= "(Combinar as caronas no privado)";
 
 							TelegramConnect::sendMessage($chat_id, $texto);
 						} elseif (count($args) == 2) {
@@ -201,10 +202,11 @@
 							$resultado = $dao->getListaVolta($chat_id);
 
 							$source = Config::getBotConfig("source");
-							$texto = "<b>Volta de " . $source . "</b>\n(Combinar as caronas no privado)";
+							$texto = "<b>Volta de " . $source . "</b>\n";
 							foreach ($resultado as $carona){
-								$texto .= (string)$carona;
+								$texto .= (string)$carona . "\n";
 							}
+							$texto .= "(Combinar as caronas no privado)";
 
 							TelegramConnect::sendMessage($chat_id, $texto);
 

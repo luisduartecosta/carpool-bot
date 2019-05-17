@@ -113,7 +113,7 @@
 						
 					case 'teste':
 						error_log("teste");
-						$texto = "Versão 2.1 - ChatId: $chat_id";
+						$texto = "Versão 2.2 - ChatId: $chat_id";
 
 						TelegramConnect::sendMessage($chat_id, $texto);
 						break;

@@ -105,7 +105,7 @@
 							/remover [ida|volta] --> Comando utilizado para remover a carona da lista. 
 								Ex: /remover ida
 
-							OBS --> O bot exclui automaticamente todas caronas após 30min do seu início.
+							OBS --> O bot exclui automaticamente todas caronas após 30min do seu início.";
 
 								
 						TelegramConnect::sendMessage($chat_id, $help);

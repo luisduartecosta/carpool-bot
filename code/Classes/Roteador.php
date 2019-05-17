@@ -59,7 +59,7 @@
 			   
 						- Nome e foto: libere a exibição do nome e foto no Telegram. Isso oferece mais segurança para os motoristas e caroneiros. Caso não exiba, existe grande chance de você ser removido por engano ou considerado inativo.
 			   
-						- Oferta: Ao oferecer carona, informe o horário que vai sair do seu destino e local de partida.
+						- Oferta: Ao oferecer carona, informe o horário que vai sair e local de partida/chegada.
 			   
 						- Carona para o dia seguinte: espere um horário que não atrapalhe quem está pedindo carona para voltar da faculdade. Ofereça após as 19h.
 			   

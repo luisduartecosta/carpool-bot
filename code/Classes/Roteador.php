@@ -143,7 +143,7 @@
 							$resultado = $dao->getListaIda($chat_id);
 
 							$source = Config::getBotConfig("source");
-							$texto = "<b>Ida para " . $source . "</b>\n";
+							$texto = "<b>Ida para " . $source . "</b>\n(Combinar as caronas no privado)";
 							foreach ($resultado as $carona){
 								$texto .= (string)$carona . "\n";
 							}
@@ -201,7 +201,7 @@
 							$resultado = $dao->getListaVolta($chat_id);
 
 							$source = Config::getBotConfig("source");
-							$texto = "<b>Volta de " . $source . "</b>\n";
+							$texto = "<b>Volta de " . $source . "</b>\n(Combinar as caronas no privado)";
 							foreach ($resultado as $carona){
 								$texto .= (string)$carona . "\n";
 							}

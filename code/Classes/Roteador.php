@@ -131,7 +131,7 @@
 						break;
 
 					case 'janoti':
-						$texto = "@Janoti oferece carona entre 08:00 e 12:00 com 6 vagas saindo de Ilha Toda";
+						$texto = "Janoti oferece carona entre 08:00 e 12:00 com 6 vagas saindo de Ilha Toda";
 
 						TelegramConnect::sendMessage($chat_id, $texto);
 						break;

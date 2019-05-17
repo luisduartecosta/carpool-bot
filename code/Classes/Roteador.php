@@ -85,36 +85,29 @@
 					case 'help':
 						$help = "Utilize este Bot para agendar as caronas. A utilização é super simples e através de comandos:
 
-								/ida [horario] [vagas] [local] --> Este comando serve para definir um horário que você está INDO para o FUNDÃO.
-									Ex: /ida 10:00 2 jardim
-									(Inclui uma carona de ida às 10:00 com 2 vagas saindo do jardim)
+						Listar caronas disponíveis:
+							/ida 	--> Lista as caronas de ida para o Fundão.
+							/volta 	--> Lista de caronas de volta para a Ilha.
 
-								/ida [horario] --> Este comando serve para definir um horário que você está INDO para o FUNDÃO. Nessa opção, não é necessário definir vagas e local.
-									Ex: /ida 10:00
-									(Inclui uma carona de ida às 10:00)
+						Oferecer caronas:
+							/[ida|volta] [horario] --> Cria uma carona de ida ou volta informando o horário.
+								Ex: /ida 10:00   (Oferece uma carona de ida com início as 10:00)
+									/volta 20:00 (Oferece uma carona de volta com início as 20:00)
 
-								Caso não seja colocado o parâmetro do horário (Ex: /ida) o bot irá apresentar a lista com as caronas registradas para o trajeto.
+							/[ida|volta] [horario] [local] -->> Cria uma carona de ida ou volta informando o horário e local.
+								Ex: /ida 7:20 jardimGuanabara  (Oferece uma carona de ida com início as 7:20 saindo do Jardim Guanabara)
+									/volta 17:00 cacuia (Oferece uma carona de volta com início as 17:00 até o Cacuia)
 
-								/volta [horario] [vagas] [local] --> Este comando serve para definir um horário que você está VOLTANDO para o SEU BAIRRO. 
-									Ex: /volta 15:00 3 jardim 
-									(Inclui uma carona de volta às 15:00 com 3 vagas para o jardim)
+							OBS --> Respeitar o padrão de hora XX:XX ou XX para horas exatas.
+								--> No campo [local] não é aceito o caracter 'espaço'. Para mais de um local, utilizar '/' (Ex: cocotá/tauá/bancários).
 
-								/volta [horario] --> Este comando serve para definir um horário que você está VOLTANDO para o SEU BAIRRO. Nessa opção, não é necessário definir vagas e local.
-									Ex: /volta 15:00
-									(Inclui uma carona de volta às 15:00)
+						Remover caronas:
+							/remover [ida|volta] --> Comando utilizado para remover a carona da lista. 
+								Ex: /remover ida
+
+							OBS --> O bot exclui automaticamente todas caronas após 30min do seu início.
+
 								
-								Caso não seja colocado o parâmetro do horário (Ex: /volta) o bot irá apresentar a lista com as caronas registradas para o trajeto.
-
-								OBS --> Para o local utilize sempre letras minúsculas e para mais de um local siga o padrão : local01/local02 
-									Ex: cacuia/cocotá/tauá/bancários
-
-								/remover [ida|volta] --> Comando utilizado para remover a carona da lista. SEMPRE REMOVA a carona depois dela ter sido realizada. O sistema não faz isso automaticamente. 
-									Ex: /remover ida
-
-								/vagas [ida|volta] [vagas] --> Este comando serve para atualizar o número de vagas de uma carona
-									Ex: /vagas ida 2 
-									(Altera o número de vagas da ida para 2)";
-						
 						TelegramConnect::sendMessage($chat_id, $help);
 						break;
 						

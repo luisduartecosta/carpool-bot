@@ -21,7 +21,7 @@
 		public function __toString() {
 
 			if (!empty($this->location)) {
-				return "\n" . substr($this->travel_hour, 0, -3) . " - @" . $this->username . "\n" . $this->location ;
+				return "\n" . substr($this->travel_hour, 0, -3) . " - @" . $this->username . " - " . $this->location ;
 			} else {
 				return "\n" . substr($this->travel_hour, 0, -3) . " - @" . $this->username;
 			}

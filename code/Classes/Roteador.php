@@ -54,30 +54,30 @@
 				switch (strtolower($command)) {
 					/*comandos padrão*/
 					case 'regras':
-						$regras = "	Este grupo tem como intuito principal facilitar o deslocamento entre Ilha e Fundão. Não visamos criar um serviço paralelo nem tirar algum lucro com isso.
-									Este documento descreve como o grupo costuma funcionar para não ficar muito bagunçado. São conselhos baseados no bom senso e experiência adquirida.
-
-									-Nome e foto: libere a exibição do nome e foto no Telegram. Isso oferece mais segurança para os motoristas e caroneiros. Caso não exiba, existe grande chance de você ser removido por engano ou considerado inativo.
-
-									-Horários: Ao oferecer carona, informe o horário que vai sair do seu destino.
-
-									-Carona para o dia seguinte: espere um horário que não atrapalhe quem está pedindo carona para voltar da faculdade. Sugestão: ofereça após as 19h.
-
-									-Valor: Não é pagamento, ninguém é obrigado a pagar como também ninguém é obrigado a dar carona. É uma ajuda de custos. Chegamos, em comum acordo, em uma contribuição de 3,00 por trajeto. (Já são mais 3 anos de grupo e nunca tivemos maiores problemas com isso).
-
-									-Não seja ganancioso, seu carro não é táxi.
-
-									-Não seja mesquinho, você está indo para a faculdade no conforto e rapidez, colabore com o motorista.
-
-									-Utilize o bot como forma principal de anunciar as caronas.
-
-									-Sempre utilize os padrões propostos pelo comando /help. Eles foram escolhidos de forma a melhorar a exibição das caronas.
-
-									-Evite conversar e fugir do tema do grupo. Este grupo é destinado apenas à carona. Para demais assuntos temos o grupo da zoeira (Para os interessados, mandar inbox para @LuisOctavioCosta)
-
-									-Qualquer dúvida sobre o funcionamento do grupo, sugestão ou reclamação, podem me procurar por inbox (@LuisOctavioCosta).
-
-									Obrigado";
+						$regras = "Este grupo tem como intuito principal facilitar o deslocamento entre Ilha e Fundão. Não visamos criar um serviço paralelo nem tirar algum lucro com isso.
+						Este documento descreve como o grupo costuma funcionar para não ficar muito bagunçado. São conselhos baseados no bom senso e experiência adquirida.
+			   
+						- Nome e foto: libere a exibição do nome e foto no Telegram. Isso oferece mais segurança para os motoristas e caroneiros. Caso não exiba, existe grande chance de você ser removido por engano ou considerado inativo.
+			   
+						- Oferta: Ao oferecer carona, informe o horário que vai sair do seu destino e local de partida.
+			   
+						- Carona para o dia seguinte: espere um horário que não atrapalhe quem está pedindo carona para voltar da faculdade. Ofereça após as 19h.
+			   
+						- Valor: Não é pagamento, ninguém é obrigado a pagar como também ninguém é obrigado a dar carona. É uma ajuda de custos. Chegamos, em comum acordo, em uma contribuição de 3,50 por trajeto. (Já são mais 6 anos de grupo e nunca tivemos maiores problemas com isso).
+			   
+						- Não seja ganancioso, seu carro não é táxi.
+			   
+						- Não seja mesquinho, você está indo para a faculdade no conforto e rapidez, colabore com o motorista.
+			   
+						- Utilize o bot como forma principal de anunciar as caronas.
+			   
+						- Sempre utilize os padrões propostos pelo comando /help. Eles foram escolhidos de forma a melhorar a exibição das caronas.
+			   
+						- Evite conversar e fugir do tema do grupo. Este grupo é destinado apenas à carona.
+			   
+						- Qualquer dúvida sobre o funcionamento do grupo, sugestão ou reclamação, podem procurar os admins por inbox (@Igor_Linhares, @Jess1ca_Lima ou @Janoti).
+			   
+						Obrigado";
 
 						TelegramConnect::sendMessage($chat_id, $regras);
 						break;

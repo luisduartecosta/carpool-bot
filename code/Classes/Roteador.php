@@ -147,7 +147,7 @@
 							foreach ($resultado as $carona){
 								$texto .= (string)$carona . "\n";
 							}
-							$texto .= "(Combinar as caronas no privado)";
+							$texto .= "\n(Combinar as caronas no privado)";
 
 							TelegramConnect::sendMessage($chat_id, $texto);
 						} elseif (count($args) == 2) {
@@ -206,7 +206,7 @@
 							foreach ($resultado as $carona){
 								$texto .= (string)$carona . "\n";
 							}
-							$texto .= "(Combinar as caronas no privado)";
+							$texto .= "\n(Combinar as caronas no privado)";
 
 							TelegramConnect::sendMessage($chat_id, $texto);
 

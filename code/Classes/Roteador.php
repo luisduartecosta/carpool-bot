@@ -145,7 +145,7 @@
 							$source = Config::getBotConfig("source");
 							$texto = "<b>Ida para " . $source . "</b>\n(Combinar as caronas no privado)";
 							foreach ($resultado as $carona){
-								$texto .= (string)$carona . "\n";
+								$texto .= (string)$carona;
 							}
 
 							TelegramConnect::sendMessage($chat_id, $texto);
@@ -203,7 +203,7 @@
 							$source = Config::getBotConfig("source");
 							$texto = "<b>Volta de " . $source . "</b>\n(Combinar as caronas no privado)";
 							foreach ($resultado as $carona){
-								$texto .= (string)$carona . "\n";
+								$texto .= (string)$carona;
 							}
 
 							TelegramConnect::sendMessage($chat_id, $texto);
